@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/kutumb-react-assign/static/css/main.a955d080.css",
-    "main.js": "/kutumb-react-assign/static/js/main.f4969119.js",
+    "main.css": "/kutumb-react-assign/static/css/main.00fb40de.css",
+    "main.js": "/kutumb-react-assign/static/js/main.3146d04e.js",
     "static/js/453.e1e343f4.chunk.js": "/kutumb-react-assign/static/js/453.e1e343f4.chunk.js",
     "index.html": "/kutumb-react-assign/index.html",
-    "main.a955d080.css.map": "/kutumb-react-assign/static/css/main.a955d080.css.map",
-    "main.f4969119.js.map": "/kutumb-react-assign/static/js/main.f4969119.js.map",
+    "main.00fb40de.css.map": "/kutumb-react-assign/static/css/main.00fb40de.css.map",
+    "main.3146d04e.js.map": "/kutumb-react-assign/static/js/main.3146d04e.js.map",
     "453.e1e343f4.chunk.js.map": "/kutumb-react-assign/static/js/453.e1e343f4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a955d080.css",
-    "static/js/main.f4969119.js"
+    "static/css/main.00fb40de.css",
+    "static/js/main.3146d04e.js"
   ]
 }
