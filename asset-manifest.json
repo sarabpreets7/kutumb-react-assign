@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/kutumb-react/static/css/main.a955d080.css",
+    "main.js": "/kutumb-react/static/js/main.61574b83.js",
+    "static/js/453.e1e343f4.chunk.js": "/kutumb-react/static/js/453.e1e343f4.chunk.js",
+    "index.html": "/kutumb-react/index.html",
+    "main.a955d080.css.map": "/kutumb-react/static/css/main.a955d080.css.map",
+    "main.61574b83.js.map": "/kutumb-react/static/js/main.61574b83.js.map",
+    "453.e1e343f4.chunk.js.map": "/kutumb-react/static/js/453.e1e343f4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a955d080.css",
+    "static/js/main.61574b83.js"
+  ]
+}
