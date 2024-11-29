@@ -1,129 +1,132 @@
 .quote-list-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 80px; /* Space for the filter container */
+  height: 100vh; /* Viewport height for proper scrolling */
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.filter-container label {
+  margin-right: 8px;
+  font-weight: bold;
+}
+
+.filter-container select {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+}
+
+.quotes-grid {
+  flex-grow: 1; /* Ensures it fills available space */
+  overflow-y: auto; /* Enables vertical scrolling */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding-bottom: 20px; /* Extra space at the bottom for better UX */
+}
+
+.quote-card {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  text-align: center;
+}
+
+.quote-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.quote-card .overlay {
+  font-size: 1rem;
+  color: #333;
+}
+
+.author,
+.created {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 5px;
+}
+
+.floating-button {
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.floating-button:hover {
+  background-color: #0056b3;
+}
+
+.load-more-button {
+  margin: 20px auto;
+  display: block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.load-more-button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
   h1 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-  
-  .quotes-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-  }
-  
-  .quote-card {
-    background: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    padding: 16px;
-    text-align: center;
-  }
-  
-  .quote-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 10px;
-  }
-  
-  .quote-card .overlay {
-    font-size: 1rem;
-    color: #333;
-  }
-  
-  .author,
-  .created {
-    font-size: 0.9rem;
-    color: #666;
-    margin-top: 5px;
-  }
-  
-  .floating-button {
-    background-color: #007bff;
-    color: #fff;
     font-size: 1.5rem;
-    border: none;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    position: fixed;
-    bottom: 80px;
-    right: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease;
   }
-  
-  .floating-button:hover {
-    background-color: #0056b3;
+
+  .floating-button {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    bottom: 15px;
+    right: 15px;
   }
-  
+
   .load-more-button {
-    margin: 20px auto;
-    display: block;
-    padding: 10px 20px;
-    font-size: 1rem;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    font-size: 0.9rem;
+    padding: 8px 16px;
   }
-  
-  .load-more-button:hover {
-    background-color: #0056b3;
-  }
-  
-  @media (max-width: 768px) {
-    h1 {
-      font-size: 1.5rem;
-    }
-  
-    .floating-button {
-      width: 40px;
-      height: 40px;
-      font-size: 1.2rem;
-      bottom: 15px;
-      right: 15px;
-    }
-  
-    .load-more-button {
-      font-size: 0.9rem;
-      padding: 8px 16px;
-    }
-  }
-  .filter-container {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-bottom: 16px;
-    height: 50px;
-    position: absolute;
-    top: 40px;
-    right: 40px;
-  }
-  
-  .filter-container label {
-    margin-right: 8px;
-    font-weight: bold;
-  }
-  
-  .filter-container select {
-    padding: 8px 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color: white;
-    font-size: 14px;
-    outline: none;
-    cursor: pointer;
-  }
-  
+}

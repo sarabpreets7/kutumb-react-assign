@@ -36,12 +36,7 @@ const QuoteList = ({ token }) => {
     return quotesArray.sort((a, b) => {
       const dateA = new Date(a.createdAt).getTime();
       const dateB = new Date(b.createdAt).getTime();
-      console.log(dateA, dateB, "datess");
-      if (order === "latest") {
-        return dateB - dateA;
-      } else {
-        return dateA - dateB;
-      }
+      return order === "latest" ? dateB - dateA : dateA - dateB;
     });
   };
 
