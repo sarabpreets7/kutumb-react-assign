@@ -9,7 +9,7 @@ const App = () => {
   const [token, setToken] = useState(null);
 
   return (
-    <Router>
+    <Router  basename="/kutumb-react">
       <Routes>
         <Route path="/" element={<Login setToken={setToken} />} />
         <Route path="/quotes" element={<QuoteList token={token} />} />
